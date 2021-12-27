@@ -16,6 +16,7 @@ public class BaseServlet extends HttpServlet {
             req.setCharacterEncoding("utf-8");
             Method m = this.getClass().getMethod(method,HttpServletRequest.class,HttpServletResponse.class);
             String redirect = m.invoke(this,req,resp).toString();
+            System.out.println(redirect+"   from baseservlet");
             if(redirect.startsWith("@")){
                 resp.sendRedirect(redirect.substring(1));
             }else if(redirect.startsWith("%"))

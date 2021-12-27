@@ -24,11 +24,12 @@ public class BackendServletFilter implements Filter {
 
         //获取根容器目录
         String contextPath= request.getServletContext().getContextPath();
+        System.out.println(contextPath);
         //获取uri
         String uri  = request.getRequestURI();
         //uri中消除根目录
         uri = StringUtils.remove(uri,contextPath);
-
+        System.out.println(uri+"from filter");
         //获取登录信息
         User user = (User) request.getSession().getAttribute("user");
 
@@ -93,6 +94,7 @@ public class BackendServletFilter implements Filter {
         if(!(uri.contains(".") || (uri.lastIndexOf('/')>0))){
             String servletPath = "front.servlet";
             String method = uri.substring(1);
+            System.out.println(method+"from frontservlet");
             if(method.equals("")) method = "home"; //缺省首页
             request.setAttribute("method",method);
             boolean flag = false;

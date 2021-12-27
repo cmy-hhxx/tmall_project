@@ -31,16 +31,16 @@
         <!-- Wrapper for slides -->
         <div role="listbox" class="carousel-inner">
             <div class="item active">
-                <img src="../img/1.jpg" class="carousel carousel-image">
+                <img src="img/1.jpg" class="carousel carousel-image">
             </div>
             <div class="item">
-                <img src="../img/2.jpg" class="carousel-image">
+                <img src="img/2.jpg" class="carousel-image">
             </div>
             <div class="item">
-                <img src="../img/3.jpg" class="carousel-image">
+                <img src="img/3.jpg" class="carousel-image">
             </div>
             <div class="item">
-                <img src="../img/4.jpg" class="carousel-image">
+                <img src="img/4.jpg" class="carousel-image">
             </div>
         </div>
 

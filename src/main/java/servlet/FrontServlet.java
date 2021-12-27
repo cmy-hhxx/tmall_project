@@ -8,8 +8,10 @@ import util.PasswordUtil;
 import util.ProductSortUtil;
 
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -63,9 +65,36 @@ public class FrontServlet extends BaseServlet{
         String name = request.getParameter("name");
         name = StringEscapeUtils.escapeHtml4(name);
         String password = request.getParameter("password");
+        String verify = request.getParameter("verify");
+        System.out.println(verify);
         password = StringEscapeUtils.escapeHtml4(password);
         password = PasswordUtil.encryptPassword(password);
         User user = new UserService().get(name, password);
+        Cookie cookie = null;
+        Cookie[] cookies = null;
+        cookies = request.getCookies();
+        System.out.println(cookies[0].getValue());
+        String verify_cookie = null;
+        //System.out.println(cookies[3].getValue());
+//        if(cookies != null){
+//            for(int i=0;i < cookies.length;i++){
+//                cookie = cookies[i];
+////                if("verify_code".equals(cookie.getName())){
+////                    verify_cookie = cookie.getValue();
+////                }
+////                break;
+//                System.out.println(cookie.getName());
+//            }
+//        }
+        System.out.println(cookies[4].getName());
+        System.out.println(cookies[4].getValue());
+        verify_cookie = cookies[4].getValue();
+        //System.out.println(verify_cookie);
+        if(!verify_cookie.equals(verify)){
+            request.setAttribute("msg", "验证码错误");
+            request.setAttribute("refer", refer);
+            return "jsp/login.jsp";
+        }
         if (user == null) {
             request.setAttribute("msg", "用户名或密码错误");
             request.setAttribute("refer", refer);

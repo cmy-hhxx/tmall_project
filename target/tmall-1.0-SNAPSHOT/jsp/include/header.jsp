@@ -11,5 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        #canvas{
+            cursor:pointer;
+        }
+    </style>
 </head>
 <body>

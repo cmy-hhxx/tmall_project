@@ -13,11 +13,11 @@
 <head>
     <title>${title} - 商城后台</title>
     <meta charset="utf-8">
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/admin.js"></script>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/admin.css" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/admin.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
 </head>
 <body>
 
