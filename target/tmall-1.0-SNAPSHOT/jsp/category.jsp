@@ -12,7 +12,7 @@
 <%@include file="include/top.jsp"%>
 <%@include file="include/search.jsp"%>
 <%@include file="include/category/categoryPage.jsp"%>
-<%@include file="include/footer.jsp"%>
+<%--<%@include file="include/footer.jsp"%>--%>
 
 
 

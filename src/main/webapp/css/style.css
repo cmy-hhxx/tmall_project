@@ -260,12 +260,12 @@ section.carousel .carousel-of-product{
     position: relative;
 }
 section.carousel img.carousel-image{
-    height:460px;
+    height:500px;
 }
 
 section.carousel .m-menu{
     width:200px;
-    height:460px;
+    height:500px;
     position: absolute;
     top:0;
     left:0;

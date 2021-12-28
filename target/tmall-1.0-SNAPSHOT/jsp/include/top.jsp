@@ -19,7 +19,7 @@
             <c:if test="${empty home}">
             <span><span class=" glyphicon glyphicon-home redColor"></span><a href="/${contextPath}">天猫首页</a></span>
             </c:if>
-            <span>喵，欢迎来天猫</span>
+            <span>喵，欢迎来cmy小站</span>
 
             <c:if test="${!empty user}">
                 ${user.name}
@@ -37,7 +37,7 @@
             </c:if>
             <a href="cart"><span class=" glyphicon glyphicon-shopping-cart redColor"></span>
                 购物车<c:if test="${!empty user}"><strong id="cart-number">0</strong>件</c:if></a>
-            <c:if test="${user.group=='admin' || user.group=='superadmin'}">
+            <c:if test="${user.group=='admin' || user.group=='superAdmin'}">
                 <a href="admin/">网站后台</a>
             </c:if>
         </span>

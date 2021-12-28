@@ -9,11 +9,11 @@
         <span>商品分类</span>
     </div>
     <div class="r-menu">
-        <a href="#nowhere"><img src="img/chaoshi.png"></a>
-        <a href="#nowhere"><img src="img/guoji.png"></a>
+<%--        <a href="#nowhere"><img src="img/chaoshi.png"></a>--%>
+<%--        <a href="#nowhere"><img src="img/guoji.png"></a>--%>
         <c:forEach items="${categories}" var="c" varStatus="vs">
             <c:if test="${vs.count>=1 and vs.count<=4}">
-                <a href="category?cid=${c.id}">${c.name}</a>
+                <button class="btn-xs"><a href="category?cid=${c.id}">${c.name}</a></button>
             </c:if>
         </c:forEach>
     </div>
@@ -31,16 +31,16 @@
         <!-- Wrapper for slides -->
         <div role="listbox" class="carousel-inner">
             <div class="item active">
-                <img src="img/1.jpg" class="carousel carousel-image">
+                <img src="https://s2.loli.net/2021/12/25/Ez28CShyKevqG31.jpg" class="carousel carousel-image" style="width: 1200px">
             </div>
             <div class="item">
-                <img src="img/2.jpg" class="carousel-image">
+                <img src="https://s2.loli.net/2021/12/16/RDy5PdCjJX3T1Vw.jpg" class="carousel-image" style="width: 1200px">
             </div>
             <div class="item">
-                <img src="img/3.jpg" class="carousel-image">
+                <img src="https://i.loli.net/2021/11/27/G3JMi9nt7SP2Iwv.png" class="carousel-image" style="width: 1200px">
             </div>
             <div class="item">
-                <img src="img/4.jpg" class="carousel-image">
+                <img src="https://s2.loli.net/2021/12/28/Ri3LObWY6ThVlPm.jpg" class="carousel-image" style="width: 1200px">
             </div>
         </div>
 
