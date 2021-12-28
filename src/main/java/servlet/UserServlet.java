@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-@WebServlet("/user.servlet")
 public class UserServlet extends BaseServlet{
     private UserService service = new UserService();
     public String list(HttpServletRequest request, HttpServletResponse response){

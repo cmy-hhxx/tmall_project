@@ -17,7 +17,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet("/category.servlet")
 public class CategoryServlet extends BaseServlet{
     private CategoryService service = new CategoryService();
     public String list(HttpServletRequest request, HttpServletResponse response)

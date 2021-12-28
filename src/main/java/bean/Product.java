@@ -15,6 +15,15 @@ public class Product {
     private ProductImage firstProductImage;
     private int commentCount;
     private int saleCount;
+    private String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public int getId() {
         return id;

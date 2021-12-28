@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-@WebServlet("/property.servlet")
 public class PropertyServlet extends BaseServlet{
     private PropertyService service = new PropertyService();
     public String list(HttpServletRequest request, HttpServletResponse response){

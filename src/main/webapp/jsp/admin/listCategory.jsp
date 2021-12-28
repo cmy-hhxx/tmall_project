@@ -30,7 +30,6 @@
             <th scope="col">属性管理</th>
             <th scope="col">产品管理</th>
             <th scope="col">编辑</th>
-            <th scope="col">删除</th>
         </tr>
         </thead>
         <tbody>
@@ -44,7 +43,6 @@
                 <td><a href="property_list?cid=${c.id}"><span class="glyphicon glyphicon-list-alt"></span></a></td>
                 <td><a href="product_list?cid=${c.id}"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>
                 <td><a href="category_edit?cid=${c.id}"><span class="glyphicon glyphicon-edit"></span></a></td>
-                <td><a href="category_delete?cid=${c.id}" class="delete-button"><span class="glyphicon glyphicon-trash"></span></a></td>
             </tr>
         </c:forEach>
         </tbody>

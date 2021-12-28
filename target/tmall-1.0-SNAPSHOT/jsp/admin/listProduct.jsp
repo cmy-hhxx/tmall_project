@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: xen
-  Date: 2017/12/5
-  Time: 21:56
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix='fmt' %>
@@ -30,7 +24,7 @@
             <th scope="col">原价格</th>
             <th scope="col">现价格</th>
             <th scope="col">库存</th>
-            <th scope="col">图片管理</th>
+<%--            <th scope="col">图片管理</th>--%>
             <th scope="col">设置属性值</th>
             <th scope="col">编辑</th>
             <th scope="col">删除</th>
@@ -41,13 +35,13 @@
         <c:forEach items="${products}" var="p" varStatus="vs">
             <tr>
                 <th scope="row">${p.id}</th>
-                <td><img src="/pictures/product/${p.firstProductImage.id}.jpg" height="30px"></td>
+                <td><img src="../../img/1.jpg" height="30px"></td>
                 <td>${p.name}</td>
                 <td>${p.subTitle}</td>
                 <td>${p.originalPrice}</td>
                 <td>${p.nowPrice}</td>
                 <td>${p.stock}</td>
-                <td><a href="productImage_list?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-picture"></span></a></td>
+<%--                <td><a href="productImage_list?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-picture"></span></a></td>--%>
                 <td><a href="product_editPropertyValue?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-th-list"></span></a></td>
                 <td><a href="product_edit?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-edit"></span></a></td>
                 <td><a href="product_delete?pid=${p.id}&cid=${category.id}" class="delete-button"><span class="glyphicon glyphicon-trash"></span></a></td>

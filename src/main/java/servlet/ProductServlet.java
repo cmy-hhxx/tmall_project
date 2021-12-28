@@ -4,6 +4,7 @@ import bean.Category;
 import bean.Product;
 import bean.Property;
 import bean.PropertyValue;
+import dao.ProductDao;
 import org.apache.commons.lang3.StringUtils;
 import service.CategoryService;
 import service.ProductService;
@@ -21,7 +22,6 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 
-@WebServlet("/product.servlet")
 public class ProductServlet extends BaseServlet{
     private ProductService service = new ProductService();
 

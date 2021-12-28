@@ -4,6 +4,25 @@
 
 
 <main class="index">
+<%--    <div class="products">--%>
+<%--        <div class="title-bar">--%>
+<%--            <i class="color-mark"></i>--%>
+<%--            <span class="category-title">python</span>--%>
+<%--        </div>--%>
+<%--        <div class="product-items">--%>
+<%--            <c:forEach items="${c.products}" var="p" varStatus="vs">--%>
+<%--                <a href="product?pid=${p.id}">--%>
+<%--                    <div class="item">--%>
+<%--                        <img src="pictures/product/${p.firstProductImage.id}.jpg">--%>
+<%--                        <div class="item-title">${p.name}</div>--%>
+<%--                        <div class="item-price">￥${p.nowPrice}</div>+--%>
+
+<%--                    </div>--%>
+<%--                </a>--%>
+<%--            </c:forEach>--%>
+<%--        </div>--%>
+
+    </div>
     <c:forEach items="${categories}" var="c" varStatus="vs">
         <c:if test="${c.recommend > 0}">
             <div class="products">
@@ -16,9 +35,10 @@
                     <c:forEach items="${c.products}" var="p" varStatus="vs">
                     <a href="product?pid=${p.id}">
                         <div class="item">
-                            <img src="pictures/product/${p.firstProductImage.id}.jpg">
+                            <img src="${p.url}">
                             <div class="item-title">${p.name}</div>
-                            <div class="item-price">￥${p.nowPrice}</div>
+                            <div class="item-price">￥${p.nowPrice}</div>+
+
                         </div>
                     </a>
                     </c:forEach>

@@ -12,7 +12,6 @@ import java.util.Date;
 import java.util.List;
 
 
-@WebServlet("/order.servlet")
 public class OrderServlet extends BaseServlet{
     private OrderService service = new OrderService();
     public String list(HttpServletRequest request, HttpServletResponse response){

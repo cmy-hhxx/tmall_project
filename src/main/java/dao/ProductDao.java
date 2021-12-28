@@ -77,6 +77,21 @@ public class ProductDao {
         }
     }
 
+    public String get_url(int id){
+        String sql = "select url from product where deleteAt is null and id=?";
+        String  url_final = null;
+        try(Connection c = DBUtil.getConnection();
+        PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setInt(1,id);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()){
+                url_final = rs.getString("url");
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return url_final;
+    }
     public Product get(int id){
         Product bean = null;
         String sql = "select * from product where deleteAt is null and id=?";
@@ -94,6 +109,7 @@ public class ProductDao {
                 bean.setNowPrice(rs.getBigDecimal("nowPrice"));
                 bean.setStock(rs.getInt("stock"));
                 bean.setCreateDate(DateUtil.t2d(rs.getTimestamp("createDate")));
+                bean.setUrl(rs.getString("url"));
             }
         }catch (SQLException e){
             e.printStackTrace();

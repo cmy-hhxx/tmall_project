@@ -6,11 +6,13 @@
 <section class="property">
     <div class="gallery">
         <div class="pic-border">
-            <img src="pictures/product/${product.firstProductImage.id}.jpg" id="big-show">
+<%--            <img src="pictures/product/${product.firstProductImage.id}.jpg" id="big-show">--%>
+        <img src="https://s2.loli.net/2021/12/24/wMxZ32D6NA7kapn.jpg" id="big-show">
         </div>
         <div class="pic-ls" id="pic-ls">
             <C:forEach items="${topImages}" var="img" varStatus="vs">
-                <img src="pictures/product/${img.id}.jpg" big-image="pictures/product/${img.id}.jpg" class="sm-image ${vs.count == 1?'selected':''}">
+<%--                <img src="pictures/product//${img.id}.jpg" big-image="pictures/product//${img.id}.jpg" class="sm-image ${vs.count == 1?'selected':''}">--%>
+                <img src="img/1.jpg" big-image="img/1.jpg" class="sm-image ${vs.count == 1?'selected':''}">
             </C:forEach>
         </div>
         <div id="div4load" style="display:none;"></div>
