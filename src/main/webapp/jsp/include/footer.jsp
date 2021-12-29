@@ -56,9 +56,5 @@
 <footer class="footer-top clear">
 </footer>
 
-<footer class="footer-bottom">
-    <div class="foot-image"></div>
-</footer>
-
 </body>
 </html>

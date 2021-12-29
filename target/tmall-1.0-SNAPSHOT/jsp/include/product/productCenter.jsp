@@ -23,7 +23,7 @@
         </div>
         <div class="price">
             <div class="sales">
-                <img src="img/gouwu.png">全天猫实物商品通用
+                <img src="img/gouwu.png">课程商品通用
             </div>
             <div class="top-line">
                 <span class="o-price left">价格</span>
@@ -37,7 +37,7 @@
         <div class="history">
             <span class="m-sales item">月销量 <em>${product.saleCount}</em></span>
             <span class="c-num item">累计评价 <em>${product.commentCount}</em></span>
-            <span class="t-score item">送天猫积分 <em>${product.id*7}</em></span>
+            <span class="t-score item">送积分 <em>${product.id*7}</em></span>
         </div>
         <div class="product-num">
             <span class="buy-num left">数量</span>
@@ -66,9 +66,8 @@
         </div>
         <div class="service">
             <span class="left">服务承诺</span>
-            <span>正品保证</span>
+            <span>质量保证</span>
             <span>极速退款</span>
-            <span>七天无理由退换</span>
         </div>
     </div>
 </section>

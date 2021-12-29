@@ -1247,7 +1247,7 @@ main.buy-page .buy-list th.shop-and-wangwang{
     text-align: left;
 }
 main.buy-page .buy-list th.shop-and-wangwang .tmall-small-png{
-    width:15px;
+    width:50px;
 }
 main.buy-page .buy-list th.shop-and-wangwang .market-link{
     margin-left: 10px;
@@ -1715,18 +1715,19 @@ footer.footer-bottom .login-text a{
 
 /*定义login页样式*/
 main.login{
-    background: rgb(84, 19, 168);
+    background-color: #f9f2f4;
 }
 main.login .login-content{
-    height:600px;
+    height:680px;
     width:1190px;
-    margin: 0 auto;
-    background: url("../img/login.png") no-repeat;
+    background: url("https://s2.loli.net/2021/12/29/vwOkXHE2ZTCW56y.png") no-repeat;
+    background-size: 100% 100%;
     position: relative;
+    margin: 0 auto;
 }
 
 main.login .login-frame{
-    height:400px;
+    height:415px;
     width:350px;
     background: #fff;
     position: absolute;

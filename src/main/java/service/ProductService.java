@@ -23,7 +23,7 @@ public class ProductService {
         return product;
     }
     private void fill(Product rawProduct){
-        rawProduct.setFirstProductImage(new ProductImageService().getFirstImage(rawProduct.getId()));
+//        rawProduct.setFirstProductImage(new ProductImageService().getFirstImage(rawProduct.getId()));
         rawProduct.setUrl(new ProductDao().get_url(rawProduct.getId()));
         rawProduct.setSaleCount(new OrderItemService().getTotalByProduct(rawProduct.getId()));
         rawProduct.setCommentCount(new CommentService().getTotalByProduct(rawProduct.getId()));

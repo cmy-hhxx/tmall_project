@@ -15,20 +15,16 @@
 </script>
 <main class="buy-page">
     <form action="createOrder" method="post">
-        <div class="address-tip">输入收货地址</div>
+        <div class="address-tip">输入您的信息</div>
         <table class="address-table">
             <tbody>
             <tr>
-                <td class="first-column left-column">详细地址<span class="red-star">*</span></td>
-                <td class="right-column"><textarea placeholder="建议您如实填写详细收货地址，例如接到名称，门牌号码，楼层和房间号等信息"
+                <td class="first-column left-column">邮箱<span class="red-star">*</span></td>
+                <td class="right-column"><textarea placeholder="课程资料将通过您的邮箱发送，请注意查收"
                                                    name="address"></textarea></td>
             </tr>
             <tr>
-                <td class="left-column">邮政编码</td>
-                <td class="right-column"><input type="text" placeholder="如果您不清楚邮递区号，请不要填写" name="post"></td>
-            </tr>
-            <tr>
-                <td class="left-column">收货人姓名<span class="red-star">*</span></td>
+                <td class="left-column">姓名<span class="red-star">*</span></td>
                 <td class="right-column"><input type="text" placeholder="长度不超过25个字符" name="receiver"></td>
             </tr>
             <tr>
@@ -42,9 +38,8 @@
             <thead>
             <tr>
                 <th class="shop-and-wangwang" colspan="2">
-                    <img src="img/tmall-small.png" class="tmall-small-png">
-                    <a href="#nowhere" class="market-link">店铺：天猫店铺</a>
-                    <a href="#nowhere" class="wangwang-link"> <span class="wangwang-small"></span> </a>
+                    <img src="https://s2.loli.net/2021/12/29/rVNnCY1s2Dv9xAb.png" class="tmall-small-png">
+                    <a href="#nowhere" class="market-link">店铺：cmy的小店</a>
                 </th>
                 <th width="120px">单价</th>
                 <th width="120px">数量</th>
@@ -60,7 +55,7 @@
             <tbody>
             <c:forEach items="${cartItems}" var="item" varStatus="vs">
             <tr class="buy-item">
-                <td class="buy-item-image"><img src="pictures/product/${item.product.firstProductImage.id}.jpg"></td>
+                <td class="buy-item-image"><img src="${item.product.url}"></td>
                 <td class="buy-item-name"><a href="product?pid=${item.product.id}">${item.product.name}</a>
                     <div class="cart-item-title-bottom">
                         <img title="支持信用卡支付" src="img/creditcard.png">

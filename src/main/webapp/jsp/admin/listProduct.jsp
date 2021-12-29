@@ -35,7 +35,7 @@
         <c:forEach items="${products}" var="p" varStatus="vs">
             <tr>
                 <th scope="row">${p.id}</th>
-                <td><img src="../../img/1.jpg" height="30px"></td>
+                <td><img src="${p.url}" height="50px" width="50px"></td>
                 <td>${p.name}</td>
                 <td>${p.subTitle}</td>
                 <td>${p.originalPrice}</td>

@@ -89,11 +89,11 @@ public class FrontServlet extends BaseServlet{
         System.out.println(cookies[4].getValue());
         verify_cookie = cookies[4].getValue();
         //System.out.println(verify_cookie);
-//        if(!verify_cookie.equals(verify)){
-//            request.setAttribute("msg", "验证码错误");
-//            request.setAttribute("refer", refer);
-//            return "jsp/login.jsp";
-//        }
+        if(!verify_cookie.equals(verify)){
+            request.setAttribute("msg", "验证码错误");
+            request.setAttribute("refer", refer);
+            return "jsp/login.jsp";
+        }
         if (user == null) {
             request.setAttribute("msg", "用户名或密码错误");
             request.setAttribute("refer", refer);

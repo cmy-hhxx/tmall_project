@@ -3,11 +3,11 @@
 
 <header class="product">
     <a href="/${contextPath}" class="logo">
-        <img src="img/logo2.png">
+<%--        <img src="img/logo2.png">--%>
     </a>
     <div class="search">
         <form action="search" >
-        <input type="text" placeholder="搜索 天猫 商品/品牌/店铺" name="keyword">
+        <input type="text" placeholder="搜索 课程" name="keyword">
         <button class="search-button" type="submit">搜索</button>
         </form>
         <ul class="search-below">

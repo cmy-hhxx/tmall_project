@@ -46,8 +46,8 @@
                     <span class=" glyphicon glyphicon-camera"></span>
                 </span>
             <input type="text" placeholder="验证码" name="verify" id="verify" >
-        </div>
-            <canvas id="canvas" width="260px" height="50px"></canvas>
+        </div><br>
+            <canvas id="canvas" width="300px" height="45px"></canvas>
 
             <div class="login-button">
                 <button type="submit" class="login-button">登 录</button>

@@ -1,13 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: xen
-  Date: 2017/12/9
-  Time: 9:28
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <header class="pay-header login">
     <a href="/${contextPath}" class="logo">
-        <img src="img/logo2.png">
+        <img src="https://s2.loli.net/2021/12/29/dgUl8ehLiZrNtVa.png" style="width: 230px;">
     </a>
 </header>

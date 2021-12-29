@@ -7,7 +7,7 @@
 
 <header class="index-top">
     <a href="/" class="logo">
-        <img src="https://s2.loli.net/2021/12/24/JdpasWjn8Z6ctml.jpg" style="width: 201px;height: 133px;margin-left: 24px;border-radius: 3%">
+        <img src="https://s2.loli.net/2021/12/29/hD172qzn9avJExF.png" style="width: 201px;height: 133px;margin-left: 24px;border-radius: 3%">
     </a>
     <div class="search">
         <div>
