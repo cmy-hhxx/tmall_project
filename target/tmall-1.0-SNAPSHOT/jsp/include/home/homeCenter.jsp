@@ -9,8 +9,6 @@
         <span>商品分类</span>
     </div>
     <div class="r-menu">
-<%--        <a href="#nowhere"><img src="img/chaoshi.png"></a>--%>
-<%--        <a href="#nowhere"><img src="img/guoji.png"></a>--%>
         <c:forEach items="${categories}" var="c" varStatus="vs">
             <c:if test="${vs.count>=1 and vs.count<=4}">
                 <button class="btn-xs"><a href="category?cid=${c.id}">${c.name}</a></button>

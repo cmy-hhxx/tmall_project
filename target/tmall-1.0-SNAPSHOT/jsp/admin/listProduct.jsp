@@ -24,7 +24,6 @@
             <th scope="col">原价格</th>
             <th scope="col">现价格</th>
             <th scope="col">库存</th>
-<%--            <th scope="col">图片管理</th>--%>
             <th scope="col">设置属性值</th>
             <th scope="col">编辑</th>
             <th scope="col">删除</th>
@@ -41,7 +40,6 @@
                 <td>${p.originalPrice}</td>
                 <td>${p.nowPrice}</td>
                 <td>${p.stock}</td>
-<%--                <td><a href="productImage_list?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-picture"></span></a></td>--%>
                 <td><a href="product_editPropertyValue?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-th-list"></span></a></td>
                 <td><a href="product_edit?pid=${p.id}&cid=${category.id}"><span class="glyphicon glyphicon-edit"></span></a></td>
                 <td><a href="product_delete?pid=${p.id}&cid=${category.id}" class="delete-button"><span class="glyphicon glyphicon-trash"></span></a></td>
